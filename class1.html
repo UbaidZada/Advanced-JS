@@ -4,64 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programming </title>
+    <title> Programming </title>
 </head>
 <body>
     <script>
 
-// function personData(name, classs, age, id, nickname ){
+function personData(name, classs, age, id, nickname ){
 
-// this.Name = name,
-// this.Class = classs,
-// this.Age = age,
-// this.Id = id,
-// this.Nickname = nickname
+this.Name = name,
+this.Class = classs,
+this.Age = age,
+this.Id = id,
+this.Nickname = nickname
+
+}
+
+let person1 = new personData ("Ubaid", "php", 22, "sheikh" )
+let person2 = new personData ("Zain", "js", 22, "zainsab" )
+let person3 = new personData ("Ismail", "php", 22, "ChatGpt" )
+let person4 = new personData ("Zuhab", "php", 22, "Pta")
+
+console.log(person1)
+console.log(person2)
+console.log(person3)
+console.log(person4)
+
+
+
+
+
+
+ let stringify = JSON.stringify(personData)
+
+ localStorage.setItem('StdData',stringify)
+
+
+
+
+
+
+
+// class personData{
+
+// constructor(name,age,email){
+
+// this.name = name,
+// this.age = age,
+// this.email = email
+
 
 // }
 
-// let person1 = new personData ("Ubaid", "php", 22, "sheikh" )
-// let person2 = new personData ("Zain", "js", 22, "zainsab" )
-// let person3 = new personData ("Ismail", "php", 22, "ChatGpt" )
-// let person4 = new personData ("Zuhab", "php", 22, "Pta")
 
+
+// another(){
+
+//     console.log("Sorry")
+// }
+
+// Onemoremsg(){
+
+// console.log("Hello")
+// }
+
+// }
+
+
+// let person1 = new personData ("Ubaid", 22, "abc@gmail.com" )
+
+
+// person1.Onemoremsg()
+// person1.another()
 // console.log(person1)
-// console.log(person2)
-// console.log(person3)
-// console.log(person4)
 
 
-class personData{
-
-constructor(name,age,email){
-
-this.name = name,
-this.age = age,
-this.email = email
-
-
-}
-
-
-
-another(){
-
-    console.log("Sorry")
-}
-
-Onemoremsg(){
-
-console.log("Hello")
-}
-
-}
-
-
-let person1 = new personData ("Ubaid", 22, "abc@gmail.com" )
-
-
-person1.Onemoremsg()
-person1.another()
-console.log(person1)
 
 
 
