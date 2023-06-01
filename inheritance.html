@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+
+class Parent{
+
+constructor(Name,Age,Qualification){
+
+this.Name = Name,
+this.Age = Age,
+this.Qualification = Qualification,
+this.markAttendance = []
+
+
+}
+
+attendance(){
+
+this.markAttendance.push(new Date());
+
+}
+
+
+message(){
+
+console.log("i am parent class")
+
+}
+
+
+}
+
+
+class Child extends Parent{
+
+constructor(name,age,qualification,courses){
+super(name,age,qualification,courses);
+
+}
+
+
+
+
+}
+
+
+
+
+
+let person = new Parent ("Bakht Zada", 55, "Master" );
+let child = new Child ("Ubaid Zada",22, "Second Year" , );
+
+person.attendance();
+child.attendance();
+child.message();
+child.skill = ("css","php");
+person.courses = ("HTML","CSS","jAVASCRIPT");
+console.log(person);
+console.log(child)
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
