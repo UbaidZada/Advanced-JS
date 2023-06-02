@@ -74,22 +74,75 @@
 // third question 
 
 
-let obj = {
+// let obj = {
 
-car : "Grandi ",
-Modal : " 2020",
-year : " 2022 "
-}
+// car : "Grandi ",
+// Modal : " 2020",
+// year : " 2022 "
+// }
 
 
-function mycar(car,modal,year){
+// function mycar(car,modal,year){
 
 
 
 
 
     
+// }
+
+class Parent{
+
+constructor(Name,Age,Qualification){
+
+this.Name = Name;
+this.Age = Age;
+this.Qualification = Qualification;
+this.markAttendance = []
+
 }
+
+
+attendance(){
+
+this.markAttendance.push(new Date());
+
+}
+
+
+message(){
+
+console.log("Hello")
+
+
+}
+
+}
+
+class Child extends Parent{
+
+constructor(Name,Age, Qualification,courses){
+
+super(Name,Age, Qualification,courses)
+
+
+}
+
+}
+
+
+let person = new Parent ("Bakht",55, "Enter Pass" );
+ let child = new Child("Ubaid",22, "Enter Pass" ) ;
+
+child.attendance();
+person.attendance();
+ child.message();
+ person.skill = ("JAVA","PHP");
+child.courses = ("Html","Css");
+console.log(person)
+console.log(child)
+
+
 
 
 
