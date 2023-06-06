@@ -10,51 +10,31 @@
     
 <script>
 
-
 class Parent{
 
 constructor(Name,Age,Qualification){
-
 this.Name = Name,
 this.Age = Age,
 this.Qualification = Qualification,
 this.markAttendance = []
-
-
 }
 
 attendance(){
-
 this.markAttendance.push(new Date());
-
 }
-
 
 message(){
-
 console.log("i am parent class")
-
 }
 
-
 }
-
 
 class Child extends Parent{
-
 constructor(name,age,qualification,courses){
 super(name,age,qualification,courses);
-
 }
 
-
-
-
 }
-
-
-
-
 
 let person = new Parent ("Bakht Zada", 55, "Master" );
 let child = new Child ("Ubaid Zada",22, "Second Year" , );
